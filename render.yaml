@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: distronergy-web
+    runtime: docker
+    plan: starter
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        value: https://distronergy.onrender.com/api
